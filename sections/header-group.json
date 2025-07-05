@@ -1,0 +1,163 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "top_bar_CbXNYj": {
+      "type": "top-bar",
+      "blocks": {
+        "text_slider_LFaC38": {
+          "type": "text_slider",
+          "settings": {
+            "text1": "<strong>Flat 10% OFF</strong> on Your Order! Use Code: <strong>PREMVEDA10</strong>",
+            "text2": "<strong>Free Shipping</strong> Across India on Orders Above ₹999",
+            "text3": "",
+            "change_every": 3,
+            "hidden_on_mobile": false,
+            "text_slider_center": true
+          }
+        },
+        "socials_mhewEF": {
+          "type": "socials",
+          "settings": {
+            "information_text": "",
+            "hidden_on_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "text_slider_LFaC38",
+        "socials_mhewEF"
+      ],
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "scheme-4faf0e4d-27f4-4d02-bc51-617383bab1a9",
+        "show_mobile": true,
+        "show_separator_line": false,
+        "uppercase": false,
+        "font_size": 13,
+        "font_weight": "body_weight",
+        "padding_top": 9,
+        "padding_bottom": 9
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "menu_promotion_HwTaHB": {
+          "type": "menu_promotion",
+          "disabled": true,
+          "settings": {
+            "text": "Home",
+            "open-link-newtab": true,
+            "item_label": "unset",
+            "promotion_menu_column": 2,
+            "mega_custom_width": 600,
+            "center_submenu": true,
+            "full_width": false,
+            "promotion_position": "right",
+            "promotion_image_width": 0,
+            "promotion_link_1": "",
+            "promotion_link_newtab_1": true,
+            "promotion_link_2": "",
+            "promotion_link_newtab_2": true
+          }
+        },
+        "menu_collection_EkdGyG": {
+          "type": "menu_collection",
+          "disabled": true,
+          "settings": {
+            "text": "shop",
+            "open-link-newtab": true,
+            "item_label": "unset",
+            "collection_menu_column": 2,
+            "mega_custom_width": 1030,
+            "center_submenu": true,
+            "full_width": false,
+            "collection_width": 55,
+            "collection_1": "demin",
+            "collection_2": "crop-top",
+            "collection_3": ""
+          }
+        },
+        "menu_promotion_rWzQL6": {
+          "type": "menu_promotion",
+          "disabled": true,
+          "settings": {
+            "text": "Products",
+            "open-link-newtab": true,
+            "item_label": "unset",
+            "promotion_menu_column": 4,
+            "mega_custom_width": 1400,
+            "center_submenu": true,
+            "full_width": false,
+            "promotion_position": "right",
+            "promotion_image_width": 33,
+            "promotion_link_1": "shopify://collections/coats",
+            "promotion_link_newtab_1": true,
+            "promotion_link_2": "",
+            "promotion_link_newtab_2": true
+          }
+        }
+      },
+      "block_order": [
+        "menu_promotion_HwTaHB",
+        "menu_collection_EkdGyG",
+        "menu_promotion_rWzQL6"
+      ],
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "scheme-c9f7d39d-9187-4c1a-a16e-f486e6f002dd",
+        "logo_position": "left",
+        "logo_position_option": 4,
+        "separator_line": "inner_page",
+        "enable_login_popup": true,
+        "sticky_header_type": "always",
+        "sticky_header_mobile": true,
+        "transparent_header": false,
+        "transparent_mobile": false,
+        "header_box": false,
+        "transparent_text_icon_color": "#ffffff",
+        "transparent_bg_color": "",
+        "mega_menu": "main-menu",
+        "dropdowns_animation": "fade-in",
+        "uppercase_first": false,
+        "hot": "Hot",
+        "label_color_hot": "#ffffff",
+        "label_background_hot": "#d0473e",
+        "new": "New",
+        "label_color_new": "#ffffff",
+        "label_background_new": "#516cf4",
+        "sale": "Sale",
+        "label_color_sale": "#ffffff",
+        "label_background_sale": "#d0473e",
+        "redirect_to_link": false,
+        "menu_tab": "custom-collections",
+        "collection_list": [],
+        "menu_mobile_color": "#ffffff",
+        "menu_mobile_background": "#88b04b",
+        "show_search": true,
+        "show_account_icon": true,
+        "show_wishlist_icon": true,
+        "show_shopping_cart": true,
+        "show_currency": false,
+        "show_language": false,
+        "show_recently_viewed": false,
+        "padding_top": 10,
+        "padding_bottom": 10
+      }
+    }
+  },
+  "order": [
+    "top_bar_CbXNYj",
+    "header"
+  ]
+}

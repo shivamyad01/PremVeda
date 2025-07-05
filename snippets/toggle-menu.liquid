@@ -1,0 +1,39 @@
+{% liquid
+  assign enable_rtl = settings.rtl
+  assign iso_code = request.locale.iso_code
+  assign lis_language_rtl = settings.language_rtl
+  if lis_language_rtl != blank
+    if lis_language_rtl contains iso_code
+      assign enable_rtl = true
+    else
+      assign enable_rtl = false
+    endif
+  endif
+%}
+<div
+  data-action="toggle-nav"
+  class="action nav-toggle overlay inline-flex pointer w-44 h-44 {% if type != 'header_drawer' %}hidden-1025{% endif %} header-color align-center{% if enable_rtl %} justify-content-start{% endif %}"
+>
+  <svg
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    {% if type == 'header_drawer' %}
+      class="icon-open-drawer"
+    {% endif %}
+  >
+    <path d="M3.692 12.646h16.616M3.692 5.762h16.616M3.692 19.608h16.616" stroke="currentColor" stroke-width="1.2"></path>
+  </svg>
+  {% if type == 'header_drawer' %}
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 13 13"
+      fill="none"
+      class="hidden block-1025 icon-close-drawer"
+    >
+      <use href="#icon-close" />
+    </svg>
+  {% endif %}
+</div>

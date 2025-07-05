@@ -1,0 +1,341 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumb": {
+      "type": "breadcrumb",
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "default",
+        "next_prev": false
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title_G6tU8U": {
+          "type": "title",
+          "settings": {
+            "show_vendor": false
+          }
+        },
+        "price_VJ4N8m": {
+          "type": "price",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_wNLCQb": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "short_description_69N9xC": {
+          "type": "short_description",
+          "settings": {
+            "excerpt_length": 150
+          }
+        },
+        "custom_liquid_jXxLGz": {
+          "type": "custom_liquid",
+          "disabled": true,
+          "settings": {
+            "custom_liquid": "<section style=\"padding: 40px 20px; background-color: #fefbf9;\">\n  <div style=\"max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; text-align: center;\">\n    \n    <div style=\"flex: 1 1 150px;\">\n      <img src=\"{{ 'natural-icon.svg' | asset_url }}\" alt=\"100% Natural\" style=\"height: 40px; margin-bottom: 10px;\">\n      <p style=\"font-weight: bold;\">100% Natural</p>\n    </div>\n\n    <div style=\"flex: 1 1 150px;\">\n      <img src=\"{{ 'crueltyfree-icon.svg' | asset_url }}\" alt=\"Cruelty Free\" style=\"height: 40px; margin-bottom: 10px;\">\n      <p style=\"font-weight: bold;\">Cruelty Free</p>\n    </div>\n\n    <div style=\"flex: 1 1 150px;\">\n      <img src=\"{{ 'no-synthetics-icon.svg' | asset_url }}\" alt=\"No Synthetics Used\" style=\"height: 40px; margin-bottom: 10px;\">\n      <p style=\"font-weight: bold;\">No Synthetics Used</p>\n    </div>\n\n    <div style=\"flex: 1 1 150px;\">\n      <img src=\"{{ 'ayurvedic-herbs-icon.svg' | asset_url }}\" alt=\"Ayurvedic Herbs\" style=\"height: 40px; margin-bottom: 10px;\">\n      <p style=\"font-weight: bold;\">Ayurvedic Herbs</p>\n    </div>\n\n    <div style=\"flex: 1 1 150px;\">\n      <img src=\"{{ 'no-side-effects-icon.svg' | asset_url }}\" alt=\"No Side Effects\" style=\"height: 40px; margin-bottom: 10px;\">\n      <p style=\"font-weight: bold;\">No Side Effects</p>\n    </div>\n\n  </div>\n</section>"
+          }
+        },
+        "review_and_sold_AAbJC9": {
+          "type": "review_and_sold",
+          "settings": {
+            "show_review": false,
+            "show_sold_products": false,
+            "sold": "8,10,12,15,17,22",
+            "hours": "10,12,15,16,18,20,24"
+          }
+        },
+        "delivery_return_iJHeMD": {
+          "type": "delivery_return",
+          "disabled": true,
+          "settings": {
+            "delivery_design": "vertical",
+            "delivery_content_icon": "truck",
+            "delivery_content": "<p>Estimate delivery times:<strong> 3-5 days International.</strong></p>",
+            "discount_content_icon": "discount",
+            "discount_content": "<p>Use code \"<strong>WELCOME15</strong>\" for discount 15% on your first order.</p>",
+            "return_content_icon": "free_shipping",
+            "return_content": "<p>Free shipping & returns: <strong>On all orders over $150.</strong></p>"
+          }
+        },
+        "live_view_rzDP6G": {
+          "type": "live_view",
+          "disabled": true,
+          "settings": {
+            "min_number": 10,
+            "max_number": 40,
+            "interval_time": 10,
+            "content": "[count] peoples are viewing this right now"
+          }
+        },
+        "countdown_timer_QB4Ydn": {
+          "type": "countdown_timer",
+          "settings": {
+            "timer_style": "default",
+            "content": "🔥 Hurry Up! Sale ends in:"
+          }
+        },
+        "variant_picker_tcCihG": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_type": "swatches",
+            "show_size_guide": false,
+            "size_guide_label": "Size guide",
+            "size_guide_page": "size-guide"
+          }
+        },
+        "buy_buttons_LcQGtR": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false,
+            "show_wishlist": true,
+            "show_compare": false
+          }
+        },
+        "collapsible_row_m3g6f8": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Description",
+            "content": "",
+            "use_product_description": true,
+            "open": false
+          }
+        },
+        "collapsible_row_eLaQpR": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How to Use",
+            "content": "{{ product.metafields.custom.how_to_use | metafield_tag }}",
+            "use_product_description": false,
+            "open": false
+          }
+        },
+        "collapsible_row_DA4FUC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Key Ingredients",
+            "content": "{{ product.metafields.custom.key_ingredients | metafield_tag }}",
+            "use_product_description": false,
+            "open": false
+          }
+        },
+        "complementary_products_Dcxtjz": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Pairs well with",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "show_navigation": false,
+            "show_pagination": false,
+            "enable_quick_add": false
+          }
+        },
+        "payment_icons_gm_tRtAhf": {
+          "type": "payment-icons-gm",
+          "settings": {
+            "paymenticons_headingtext": "<strong>Guaranteed Safe Checkout</strong>",
+            "fontsize_desktop": 1.2,
+            "fontsize_mobile": 1,
+            "paymenticon_width": 7,
+            "paymenticon_widthmobile": 4,
+            "image_gap": 0.3,
+            "image_gapmobile": 0.2,
+            "paymenticon_1": "shopify://shop_images/Google_Pay.svg",
+            "paymenticon_2": "shopify://shop_images/PhonePe.svg",
+            "paymenticon_3": "shopify://shop_images/Rupay.svg",
+            "paymenticon_4": "shopify://shop_images/VISA_Card.svg",
+            "paymenticon_5": "shopify://shop_images/UPI.svg"
+          }
+        }
+      },
+      "block_order": [
+        "title_G6tU8U",
+        "price_VJ4N8m",
+        "judge_me_reviews_preview_badge_wNLCQb",
+        "short_description_69N9xC",
+        "custom_liquid_jXxLGz",
+        "review_and_sold_AAbJC9",
+        "delivery_return_iJHeMD",
+        "live_view_rzDP6G",
+        "countdown_timer_QB4Ydn",
+        "variant_picker_tcCihG",
+        "buy_buttons_LcQGtR",
+        "collapsible_row_m3g6f8",
+        "collapsible_row_eLaQpR",
+        "collapsible_row_DA4FUC",
+        "complementary_products_Dcxtjz",
+        "payment_icons_gm_tRtAhf"
+      ],
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "default",
+        "enable_sticky_content_on_desktop": true,
+        "enable_skeleton_loading": false,
+        "desktop_media_width": 50,
+        "desktop_layout": "thumbnail_bottom",
+        "image_zoom": "open_lightbox",
+        "enable_video_looping": true,
+        "enable_video_autoplay": true,
+        "enable_frequently_bought_together": true,
+        "enable_on_desktop": true,
+        "enable_on_mobile": true,
+        "mobile_options": "hidden_thumbnail",
+        "padding_top": 0,
+        "padding_bottom": 27,
+        "reset_spacing": false
+      }
+    },
+    "faqs_EcgDUx": {
+      "type": "faqs",
+      "blocks": {
+        "faq_item_JC9KyA": {
+          "type": "faq_item",
+          "repeater": "{{ product.metafields.custom.faqs.value }}",
+          "settings": {
+            "faq_title": "{{ block.repeater.question.value }}",
+            "faq_content": "{{ block.repeater.answer | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_JC9KyA"
+      ],
+      "name": "Faqs",
+      "settings": {
+        "heading": "Faqs",
+        "heading_align": "left",
+        "heading_margin_bottom": 40,
+        "bg_color": "#88b04b",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "faq_spacing": 20
+      }
+    },
+    "product-set": {
+      "type": "product-set",
+      "disabled": true,
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "",
+        "heading": "Combination Styles",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "left",
+        "items_per_row": 2,
+        "column_gap": 30,
+        "show_arrow": false,
+        "carousel_pagination": "show_dots",
+        "infinite": false,
+        "autoplay": true,
+        "autorotate_speed": 5,
+        "reveal": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "1716793714ce89e457": {
+      "type": "apps",
+      "settings": {}
+    },
+    "divider_TKLM6L": {
+      "type": "divider",
+      "settings": {
+        "section_width": "fluid_container",
+        "border_height": 1,
+        "border_color": "#ebebeb",
+        "reset_spacing": false
+      }
+    },
+    "related_products": {
+      "type": "related-products",
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "scheme-c9f7d39d-9187-4c1a-a16e-f486e6f002dd",
+        "heading": "People Also Bought",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "items_to_show": 4,
+        "items_per_row": 4,
+        "column_gap": 30,
+        "items_per_row_mobile": 2,
+        "padding_top": 38,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "17515233492c0ac3a5": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_EeWQLB": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_EeWQLB"
+      ],
+      "settings": {}
+    },
+    "divider_HtLXd3": {
+      "type": "divider",
+      "disabled": true,
+      "settings": {
+        "section_width": "fluid_container",
+        "border_height": 1,
+        "border_color": "#ebebeb",
+        "reset_spacing": false
+      }
+    },
+    "products_recently_viewed_GdCNUL": {
+      "type": "products-recently-viewed",
+      "settings": {
+        "section_width": "fluid_container",
+        "color_scheme": "scheme-c9f7d39d-9187-4c1a-a16e-f486e6f002dd",
+        "heading": "Recently Viewed",
+        "description": "",
+        "header_size": "small",
+        "header_alignment": "center",
+        "items_to_show": 8,
+        "items_per_row": 4,
+        "column_gap": 30,
+        "show_arrow": true,
+        "carousel_pagination": "show_dots_on_mobile",
+        "infinite": false,
+        "autoplay": false,
+        "autorotate_speed": 5,
+        "reveal": false,
+        "items_per_row_mobile": 2,
+        "padding_top": 32,
+        "padding_bottom": 50,
+        "reset_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumb",
+    "main",
+    "faqs_EcgDUx",
+    "product-set",
+    "1716793714ce89e457",
+    "divider_TKLM6L",
+    "related_products",
+    "17515233492c0ac3a5",
+    "divider_HtLXd3",
+    "products_recently_viewed_GdCNUL"
+  ]
+}

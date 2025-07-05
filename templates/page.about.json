@@ -1,0 +1,762 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page-heading": {
+      "type": "page-heading",
+      "blocks": {
+        "breadcrumb_kg6gTP": {
+          "type": "breadcrumb",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "breadcrumb_kg6gTP"
+      ],
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "alignment": "left",
+        "overlay_opacity": 0,
+        "height": "adapt",
+        "padding_top": 24,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_qMbJGD": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_aXhCec": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Welcome to PremVeda",
+            "font_size": 15,
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 10
+          }
+        },
+        "heading_LbN4kp": {
+          "type": "heading",
+          "settings": {
+            "heading": "PremVeda - Pure Ayurvedic Wellness",
+            "font_size": 42,
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 10
+          }
+        },
+        "description_4JjTUX": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Over 15 years of experience, we have meticulously curated collections that transcend fleeting trends, <br/>embodying a timeless elegance that resonates with our discerning clientele.</p>",
+            "font_size": 15,
+            "font_weight": "body_weight",
+            "spacing_bottom": 10
+          }
+        }
+      },
+      "block_order": [
+        "subheading_aXhCec",
+        "heading_LbN4kp",
+        "description_4JjTUX"
+      ],
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_max_width": 70,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 0,
+        "padding_bottom": 43,
+        "reset_spacing": true
+      }
+    },
+    "multi_content_mBYATd": {
+      "type": "multi-content",
+      "blocks": {
+        "image_V9PiPt": {
+          "type": "image",
+          "settings": {
+            "image_behavior": "none",
+            "image_link": "",
+            "content_width": "100%",
+            "vertical_align": "start"
+          }
+        }
+      },
+      "block_order": [
+        "image_V9PiPt"
+      ],
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "small_button_style": false,
+        "carousel_on_mobile": true,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 72,
+        "reset_spacing": true
+      }
+    },
+    "counter_bjDJxc": {
+      "type": "counter",
+      "blocks": {
+        "counter_3z4qyg": {
+          "type": "counter",
+          "settings": {
+            "starting_number": 10,
+            "ending_number": 53,
+            "unit": "k",
+            "heading": "Products for Sale",
+            "description": "<p>That's why we strive to offer a diverse range of products that cater to all styles.</p>"
+          }
+        },
+        "counter_jQdJhG": {
+          "type": "counter",
+          "settings": {
+            "starting_number": 0,
+            "ending_number": 8.5,
+            "unit": "k",
+            "heading": "Happy Customer",
+            "description": "<p>We pride ourselves on creating great products and experiences with our valued customers.</p>"
+          }
+        },
+        "counter_FmWY3q": {
+          "type": "counter",
+          "settings": {
+            "starting_number": 0,
+            "ending_number": 13,
+            "unit": "k",
+            "heading": "Partner Brand",
+            "description": "<p>Partner with brands that share our values, striving to protect our environment.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "counter_3z4qyg",
+        "counter_jQdJhG",
+        "counter_FmWY3q"
+      ],
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "speed": 5,
+        "items_per_row": 3,
+        "column_gap": 30,
+        "content_alignment": "center",
+        "number_font_size": 36,
+        "number_font_weight": "subheading_weight",
+        "number_spacing_bottom": 13,
+        "heading_font_size": 20,
+        "heading_font_weight": "heading_weight",
+        "heading_spacing_bottom": 12,
+        "des_font_size": 15,
+        "des_font_weight": "body_weight",
+        "des_spacing_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "divider_jTBGQJ": {
+      "type": "divider",
+      "settings": {
+        "section_width": "container",
+        "border_height": 1,
+        "border_color": "#ebebeb",
+        "reset_spacing": false
+      }
+    },
+    "rich_text_td9KN9": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_HdJBLD": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Why Choose Us",
+            "font_size": 15,
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 4
+          }
+        },
+        "heading_izj8pi": {
+          "type": "heading",
+          "settings": {
+            "heading": "What Makes us Special",
+            "font_size": 36,
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 10
+          }
+        },
+        "description_Jpw6Dw": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Our fashion products are characterized by innovative and on—trend designs. We pride ourselves in pushing the boundaries of conventional fashion, delivering new, bold and captivating styles.</p>",
+            "font_size": 15,
+            "font_weight": "body_weight",
+            "spacing_bottom": 10
+          }
+        }
+      },
+      "block_order": [
+        "subheading_HdJBLD",
+        "heading_izj8pi",
+        "description_Jpw6Dw"
+      ],
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_max_width": 70,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 0,
+        "padding_bottom": 25,
+        "reset_spacing": true
+      }
+    },
+    "multi_content_VbbiBa": {
+      "type": "multi-content",
+      "blocks": {
+        "image_with_text_below_MP8tHt": {
+          "type": "image_with_text_below",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "33.3333%",
+            "vertical_align": "start",
+            "image_behavior": "none",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Cultural Standards",
+            "description": "<p>We are committed to setting high ethical standards in production and ensuring mindful manufacturing through audits, training and education.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "spacing_top": 28,
+            "spacing_bottom": 0,
+            "content_padding_inline": 0,
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 8,
+            "heading_font_size": 18,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 8,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        },
+        "image_with_text_below_MWmL4Q": {
+          "type": "image_with_text_below",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "33.3333%",
+            "vertical_align": "start",
+            "image_behavior": "none",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Designed to Last",
+            "description": "<p>From traditional tailoring to the most informal pieces. Our Milano collections feature the latest trends with the maximum comfort.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "spacing_top": 28,
+            "spacing_bottom": 0,
+            "content_padding_inline": 0,
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 18,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 8,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        },
+        "image_with_text_below_fA66be": {
+          "type": "image_with_text_below",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "33.3333%",
+            "vertical_align": "start",
+            "image_behavior": "none",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Freedom for Everyone",
+            "description": "<p>The designs have been created adopting the current trends, while leaving room for personal expression among young people.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "spacing_top": 28,
+            "spacing_bottom": 0,
+            "content_padding_inline": 0,
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 18,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 8,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_below_MP8tHt",
+        "image_with_text_below_MWmL4Q",
+        "image_with_text_below_fA66be"
+      ],
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "small_button_style": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 72,
+        "reset_spacing": true
+      }
+    },
+    "rich_text_yjfBc8": {
+      "type": "rich-text",
+      "blocks": {
+        "custom_html_hgJBeG": {
+          "type": "custom_html",
+          "settings": {
+            "html_custom": "",
+            "spacing_bottom": 12
+          }
+        },
+        "description_NKGpBk": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Our goal is to improve lives with our Ayurvedic products and services, creating sustainable wellness for all.</p>",
+            "font_size": 18,
+            "font_weight": "body_weight",
+            "spacing_bottom": 15
+          }
+        },
+        "subheading_RLCEF7": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "PremVeda Team",
+            "font_size": 16,
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 0
+          }
+        },
+        "description_jRcfa7": {
+          "type": "description",
+          "settings": {
+            "description": "",
+            "font_size": 14,
+            "font_weight": "body_weight",
+            "spacing_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "custom_html_hgJBeG",
+        "description_NKGpBk",
+        "subheading_RLCEF7",
+        "description_jRcfa7"
+      ],
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "scheme-bb1431b0-be4a-4b03-a450-f572c07e3904",
+        "content_alignment": "center",
+        "content_max_width": 63,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 80,
+        "padding_bottom": 70,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_yUFjXW": {
+      "type": "multi-content",
+      "blocks": {
+        "image_DrDQzr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/SWASNILmockup.jpg",
+            "image_behavior": "none",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        },
+        "text_9rzjcF": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "content_padding_block": 30,
+            "content_padding_inline": 30,
+            "image_link": "",
+            "subheading": "Our Factories",
+            "heading": "The Best Product",
+            "description": "<p>We spend a lot of time finding the best factories around the world—the same factories that make your favorite designer brands. We visit them regularly and build strong personal relationships with the owners. Each factory is audited for compliance to assess factors such as fair wages.</p>",
+            "timer": "",
+            "expired_message": "Time expired",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "Learn More",
+            "first_button_link": "shopify://collections/best-sellers",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "subheading_font_size": 15,
+            "subheading_font_weight": "heading_weight",
+            "subheading_spacing_bottom": 8,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 25,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        }
+      },
+      "block_order": [
+        "image_DrDQzr",
+        "text_9rzjcF"
+      ],
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "small_button_style": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "multi_content_Phq6nD": {
+      "type": "multi-content",
+      "blocks": {
+        "text_4HeFjG": {
+          "type": "text",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "50%",
+            "vertical_align": "center",
+            "content_padding_block": 30,
+            "content_padding_inline": 30,
+            "image_link": "",
+            "subheading": "Our Products",
+            "heading": "Timeless Products",
+            "description": "<p>At Milano, we’re not big on trends. We want you to wear our pieces for years, even decades, to come. That’s why we source the finest materials and factories for our timeless products— like our Grade-A cashmere sweaters, Italian shoes, <br/>and Peruvian Pima tees.</p>",
+            "timer": "",
+            "expired_message": "Time expired",
+            "style": "default",
+            "font_size": 36,
+            "spacing_bottom": 30,
+            "first_button_label": "Learn More",
+            "first_button_link": "shopify://collections/activewear",
+            "first_button_type": "primary",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "subheading_font_size": 15,
+            "subheading_font_weight": "heading_weight",
+            "subheading_spacing_bottom": 8,
+            "heading_font_size": 36,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 25,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 30
+          }
+        },
+        "image_cMzQ9f": {
+          "type": "image",
+          "settings": {
+            "image_behavior": "none",
+            "image_link": "",
+            "content_width": "50%",
+            "vertical_align": "start"
+          }
+        }
+      },
+      "block_order": [
+        "text_4HeFjG",
+        "image_cMzQ9f"
+      ],
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "small_button_style": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "reset_spacing": false
+      }
+    },
+    "divider_TAXJn3": {
+      "type": "divider",
+      "settings": {
+        "section_width": "container",
+        "border_height": 1,
+        "border_color": "#ebebeb",
+        "reset_spacing": false
+      }
+    },
+    "rich_text_ej4aJ8": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_jyxhWF": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "How We Work",
+            "font_size": 15,
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 3
+          }
+        },
+        "heading_NxNJtH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Expanding Horizons",
+            "font_size": 36,
+            "font_weight": "heading_weight",
+            "uppercase": false,
+            "spacing_bottom": 10
+          }
+        },
+        "description_3VEKaL": {
+          "type": "description",
+          "settings": {
+            "description": "<p>At Milano, our work culture is deeply rooted in collaboration, innovation and passion. We believe that a positive and inclusive work environment is the foundation for creativity and success.</p>",
+            "font_size": 15,
+            "font_weight": "body_weight",
+            "spacing_bottom": 10
+          }
+        }
+      },
+      "block_order": [
+        "subheading_jyxhWF",
+        "heading_NxNJtH",
+        "description_3VEKaL"
+      ],
+      "settings": {
+        "section_width": "container",
+        "color_scheme": "",
+        "content_alignment": "center",
+        "content_max_width": 73,
+        "enable_expand_content": false,
+        "expand_content_button": "See all Information",
+        "padding_top": 0,
+        "padding_bottom": 22,
+        "reset_spacing": true
+      }
+    },
+    "multi_content_cnGW9D": {
+      "type": "multi-content",
+      "blocks": {
+        "image_with_text_below_re4BzW": {
+          "type": "image_with_text_below",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "33.3333%",
+            "vertical_align": "start",
+            "image_behavior": "none",
+            "image_link": "",
+            "subheading": "",
+            "heading": "The Core of Us",
+            "description": "<p>Adipisicing elit sed do eiusmod tempor labore et dolore dignissimos cumque. Excepteur sint occaecat cupidatat proident.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "spacing_top": 27,
+            "spacing_bottom": 0,
+            "content_padding_inline": 0,
+            "subheading_font_size": 13,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 18,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        },
+        "image_with_text_below_C7nCbK": {
+          "type": "image_with_text_below",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "33.3333%",
+            "vertical_align": "start",
+            "image_behavior": "none",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Our Products",
+            "description": "<p>Adipisicing elit sed do eiusmod tempor labore et dolore dignissimos cumque. Excepteur sint occaecat cupidatat proident.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "spacing_top": 27,
+            "spacing_bottom": 0,
+            "content_padding_inline": 0,
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 18,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        },
+        "image_with_text_below_Nyqy46": {
+          "type": "image_with_text_below",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "content_width": "33.3333%",
+            "vertical_align": "start",
+            "image_behavior": "none",
+            "image_link": "",
+            "subheading": "",
+            "heading": "Our Careers",
+            "description": "<p>Adipisicing elit sed do eiusmod tempor labore et dolore dignissimos cumque. Excepteur sint occaecat cupidatat proident.</p>",
+            "first_button_label": "",
+            "first_button_link": "",
+            "first_button_type": "link",
+            "second_button_label": "",
+            "second_button_link": "",
+            "second_button_type": "primary",
+            "content_alignment": "center",
+            "spacing_top": 27,
+            "spacing_bottom": 0,
+            "content_padding_inline": 0,
+            "subheading_font_size": 12,
+            "subheading_font_weight": "subheading_weight",
+            "subheading_spacing_bottom": 15,
+            "heading_font_size": 18,
+            "heading_font_weight": "heading_weight",
+            "heading_uppercase": false,
+            "heading_spacing_bottom": 10,
+            "des_font_size": 15,
+            "des_font_weight": "body_weight",
+            "des_spacing_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_below_re4BzW",
+        "image_with_text_below_C7nCbK",
+        "image_with_text_below_Nyqy46"
+      ],
+      "settings": {
+        "section_width": "container",
+        "heading": "",
+        "description": "",
+        "header_size": "medium",
+        "header_alignment": "center",
+        "column_gap": 30,
+        "content_background_color": "",
+        "equal_height_adjustment": false,
+        "small_button_style": false,
+        "carousel_on_mobile": false,
+        "items_per_row_mobile": 1,
+        "padding_top": 13,
+        "padding_bottom": 55,
+        "reset_spacing": false
+      }
+    }
+  },
+  "order": [
+    "page-heading",
+    "rich_text_qMbJGD",
+    "multi_content_mBYATd",
+    "counter_bjDJxc",
+    "divider_jTBGQJ",
+    "rich_text_td9KN9",
+    "multi_content_VbbiBa",
+    "rich_text_yjfBc8",
+    "multi_content_yUFjXW",
+    "multi_content_Phq6nD",
+    "divider_TAXJn3",
+    "rich_text_ej4aJ8",
+    "multi_content_cnGW9D"
+  ]
+}

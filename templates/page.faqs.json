@@ -1,0 +1,190 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page-heading": {
+      "type": "page-heading",
+      "blocks": {
+        "breadcrumb_kg6gTP": {
+          "type": "breadcrumb",
+          "settings": {}
+        },
+        "heading_fmyy8C": {
+          "type": "heading",
+          "settings": {
+            "page_title": "Help Center",
+            "header_size": "default"
+          }
+        },
+        "description_TfxHmk": {
+          "type": "description",
+          "settings": {
+            "description": "<p>Please use the below form. You can also call customer service on +1 (973) 435-3638.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_kg6gTP",
+        "heading_fmyy8C",
+        "description_TfxHmk"
+      ],
+      "settings": {
+        "section_width": "stretch_width",
+        "color_scheme": "",
+        "alignment": "center",
+        "overlay_opacity": 0,
+        "height": "adapt",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "page-faqs",
+      "blocks": {
+        "title_fipewL": {
+          "type": "title",
+          "settings": {
+            "title": "Shopping Information"
+          }
+        },
+        "faq_ThHtgk": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I track my order?",
+            "answer": "<p>You will receive a tracking number after dispatch, which you can use to track your shipment live until it reaches you.</p>"
+          }
+        },
+        "faq_Gicg7X": {
+          "type": "faq",
+          "settings": {
+            "question": "How much does shipping cost for my order?",
+            "answer": "<p>Shipping costs ₹100 for domestic orders and ₹4,500 for international orders. Shipping fees are calculated at checkout.</p>"
+          }
+        },
+        "faq_836jPJ": {
+          "type": "faq",
+          "settings": {
+            "question": "How long will it take to get my package?",
+            "answer": "<p>Domestic deliveries take 3-5 business days, while international deliveries take 10-15 business days. Delays may occur due to weather or customs.</p>"
+          }
+        },
+        "faq_ia7ibM": {
+          "type": "faq",
+          "settings": {
+            "question": "What should I do if my order is lost or damaged?",
+            "answer": "<p>Report any lost or damaged items to <a href=\"mailto:admin@premveda.com\">admin@premveda.com</a> within 3 days of expected delivery for assistance with a replacement or refund</p>"
+          }
+        },
+        "title_gbHw88": {
+          "type": "title",
+          "settings": {
+            "title": "Payment Information"
+          }
+        },
+        "faq_fFdf33": {
+          "type": "faq",
+          "settings": {
+            "question": "What payment methods do you accept?",
+            "answer": "<p>We accept all major credit and debit cards, as well as payments through secure online payment gateways like PayPal and UPI for domestic orders.</p>"
+          }
+        },
+        "faq_7zgeNX": {
+          "type": "faq",
+          "settings": {
+            "question": "Is it safe to enter my payment details on your website?",
+            "answer": "<p>Yes, your payment information is completely safe with us. We use encrypted payment gateways to ensure the highest level of security for all transactions.</p>"
+          }
+        },
+        "faq_9x46hk": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I change my payment method after placing an order?",
+            "answer": "<p>Once an order is placed, the payment method cannot be changed. If you need to make adjustments, please contact us immediately at <a>imgurmeet73@gmail.com</a> before the order is processed.</p>"
+          }
+        },
+        "faq_3CHFF7": {
+          "type": "faq",
+          "settings": {
+            "question": "When will I be charged for my order?",
+            "answer": "<p>You will be charged as soon as your order is placed. In case of any issues with the payment, you will be notified immediately, and the order will be held until the payment is successfully processed.</p>"
+          }
+        },
+        "title_bqPdEf": {
+          "type": "title",
+          "settings": {
+            "title": "Order & Returns"
+          }
+        },
+        "faq_Yk6NFT": {
+          "type": "faq",
+          "settings": {
+            "question": "How can I check the status of my order?",
+            "answer": "<p>Once your order is shipped, you will receive a tracking number via email. You can use this number to track your order’s real-time status on the carrier's website.</p>"
+          }
+        },
+        "faq_4M7pba": {
+          "type": "faq",
+          "settings": {
+            "question": "Can I modify or cancel my order after placing it?",
+            "answer": "<p>Once an order is placed and confirmed, it cannot be modified or canceled. If you need assistance, please contact us immediately at <a>imgurmeet73@gmail.com</a>, and we will try to help.</p>"
+          }
+        },
+        "faq_kAVH4d": {
+          "type": "faq",
+          "settings": {
+            "question": "What happens if I receive a damaged or wrong item?",
+            "answer": "<p>If your order arrives damaged or incorrect, contact us at <a>imgurmeet73@gmail.com</a> immediately with photos of the issue. We will assist in processing a replacement or refund.</p>"
+          }
+        },
+        "faq_YnHLzc": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I return an item?",
+            "answer": "<p>To return an item, contact us at <a>imgurmeet73@gmail.com</a> within 7 days of delivery. Once your return is approved, we will provide a return shipping label and instructions</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_fipewL",
+        "faq_ThHtgk",
+        "faq_Gicg7X",
+        "faq_836jPJ",
+        "faq_ia7ibM",
+        "title_gbHw88",
+        "faq_fFdf33",
+        "faq_7zgeNX",
+        "faq_9x46hk",
+        "faq_3CHFF7",
+        "title_bqPdEf",
+        "faq_Yk6NFT",
+        "faq_4M7pba",
+        "faq_kAVH4d",
+        "faq_YnHLzc"
+      ],
+      "settings": {
+        "section_width": "container",
+        "heading": "Contact Us",
+        "description": "",
+        "first_button_label": "Contact Us",
+        "first_button_link": "shopify://pages/contact",
+        "first_button_type": "outline",
+        "second_button_label": "About us",
+        "second_button_link": "shopify://pages/about-us",
+        "second_button_type": "primary",
+        "padding_top": 0,
+        "padding_bottom": 42
+      }
+    }
+  },
+  "order": [
+    "page-heading",
+    "main"
+  ]
+}

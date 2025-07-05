@@ -1,0 +1,44 @@
+<div class="minicart">
+  <div>
+    <div
+      id="header__minicart"
+      class="header__minicart {% if type == 'header_mega' %}header__minicart--mega{% endif %} {{ action_after_add_cart }}{% if action_after_add_cart == 'show_popup' %} relative{% endif %}"
+    >
+      <a
+        id="cart-icon-bubble"
+        href="{{ routes.cart_url }}"
+        arial-label="{{ 'general.cart.label' | t }}"
+        class="no-underline {% if template != 'cart' and action_after_add_cart != 'go_to_cart_page' %}minicart__action{% endif %} header-icon header-color no-underline {% if type != 'header_mega' %}w-44{% else %}w-mb-44{% endif %} h-44 inline-flex content-center  {% if action_after_add_cart == 'show_popup' %}show-overlay{% else %}overlayminicart{% endif %}"
+      >
+        <h-count class="relative lh-1 fs-0">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+            <path stroke="currentColor" stroke-miterlimit="10" stroke-width="1.2" d="M5 6.5h16l-2.024 10H7.024L5 6.5Zm0 0L4.364 3H1"></path>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.2" d="M7.889 19.71a.65.65 0 1 1 .722 1.08.65.65 0 0 1-.722-1.08ZM16.889 19.71a.65.65 0 1 1 .722 1.08.65.65 0 0 1-.722-1.08Z"></path>
+          </svg>
+          <span class="absolute lh-1 cart-count h-count inline-flex align-center justify-content-center rounded-50 overflow-hidden fs-10">
+            {%- if cart.item_count < 100 -%}
+              {{ cart.item_count }}
+            {%- else -%}
+              ~
+            {% endif %}
+            <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+          </span>
+        </h-count>
+        {% if type == 'header_mega' %}
+          <header-total-price>
+            <span class="text-icons flex  ps-12 text-left flex-column lh-1 hidden-mobile">
+              <span class="text-icons-top mb-3">{{ 'general.cart.label' | t }}</span>
+              <span class="fs-14 text-icons-bottom" data-cart-subtotal-price>
+                {% if settings.currency_code_enabled %}
+                  {{ cart.total_price | money_with_currency }}
+                {% else %}
+                  {{ cart.total_price | money }}
+                {% endif %}
+              </span>
+            </span>
+          </header-total-price>
+        {% endif %}
+      </a>
+    </div>
+  </div>
+</div>

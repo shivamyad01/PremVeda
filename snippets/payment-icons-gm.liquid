@@ -1,0 +1,68 @@
+{% comment %}
+Code created by Genius Maker
+{% endcomment %}
+<style>
+   #payment-icons-container-gm {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Allow icons to wrap onto the next line */
+        width: 100%; /* Use full width of the container */
+        margin: 0 auto; /* Center the container */
+        gap: {{ image_gap }}rem; /* Space between icons */
+       box-sizing: border-box;
+    }
+    .image-payment-icons-gm {
+        width: {{ paymenticon_width }}rem;
+        object-fit: cover;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+.payment-icons-heading-gm {
+  text-align: center;
+  font-size: {{ fontsize_desktop }}rem;
+}
+  @media screen and (max-width: 767px){
+     #payment-icons-container-gm {
+       width: 95%;
+       margin-left: 2.5%;
+       gap: {{ image_gapmobile }}rem; /* Space between icons on mobile */
+     }
+    .image-payment-icons-gm {
+      width: {{ paymenticon_widthmobile }}rem;
+    }
+    .payment-icons-heading-gm {
+      font-size: {{ fontsize_mobile }}rem;
+    }
+  }
+</style>
+       <h5 class="payment-icons-heading-gm">{{ paymenticons_headingtext }}</h5>
+    <div id="payment-icons-container-gm">
+      {% if paymenticon_1 != blank %}
+        <img src="{{ paymenticon_1 | img_url:'' }}" class="image-payment-icons-gm">
+        {% endif %}
+
+      {% if paymenticon_2 != blank %}
+        <img src="{{ paymenticon_2 | img_url:''}}" class="image-payment-icons-gm">
+    {% endif %}
+      
+        {% if paymenticon_3 != blank %}
+        <img src="{{ paymenticon_3 | img_url:'' }}" class="image-payment-icons-gm">
+    {% endif %}
+      
+          {% if paymenticon_4 != blank %}
+        <img src="{{ paymenticon_4 | img_url:'' }}" class="image-payment-icons-gm">
+    {% endif %}
+      
+            {% if paymenticon_5 != blank %}
+        <img src="{{ paymenticon_5  | img_url:''}}" class="image-payment-icons-gm">
+    {% endif %}
+      
+              {% if paymenticon_6 != blank %}
+        <img src="{{ paymenticon_6 | img_url:'' }}" class="image-payment-icons-gm">
+    {% endif %}
+      
+                {% if paymenticon_7 != blank %}
+        <img src="{{ paymenticon_7 | img_url:'' }}" class="image-payment-icons-gm">
+               {% endif %}
+    </div>
