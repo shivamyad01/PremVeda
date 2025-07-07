@@ -1,0 +1,446 @@
+<style>
+  /* Core Styles */
+  .shop-by-concern {
+    padding: 6rem 2rem;
+    background-color: var(--color-body, #ffffff);
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: var(--color-heading, #2c3e50);
+    margin-bottom: 4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .concern-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .concern-item {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+    border-radius: var(--rounded-radius, 8px);
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    background: white;
+  }
+
+  .concern-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .concern-item.active {
+    border: 2px solid var(--color-primary, #d4a762);
+  }
+
+  .concern-image-wrapper {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+  }
+
+  .concern-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .concern-item:hover .concern-image {
+    transform: scale(1.05);
+  }
+
+  .concern-content {
+    padding: 1.5rem;
+  }
+
+  .concern-title {
+    font-size: 1.6rem;
+    color: var(--color-heading, #2c3e50);
+    margin: 0;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .concern-item:hover .concern-title {
+    color: var(--color-primary, #d4a762);
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2.5rem;
+    margin: 4rem auto 0;
+    max-width: 1400px;
+  }
+
+  .card-product {
+    position: relative;
+    border: 1px solid var(--color-border, #eee);
+    border-radius: var(--rounded-radius, 8px);
+    overflow: hidden;
+    background: var(--color-white, #fff);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .card-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--color-primary, #d4a762);
+  }
+  .card-product__media {
+    position: relative;
+    padding-top: 100%;
+    background: var(--color-bg, #f8f8f8);
+    overflow: hidden;
+  }
+
+  .card-product__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .card-product:hover .card-product__image {
+    transform: scale(1.05);
+  }
+
+  .card-product__content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .card-product__title {
+    font-size: 1.4rem;
+    margin: 0 0 0.8rem;
+    font-weight: 500;
+    color: var(--color-heading, #2c3e50);
+    line-height: 1.3;
+  }
+
+  .card-product__title a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .card-product__title a:hover {
+    color: var(--color-primary, #d4a762);
+  }
+
+  .card-product__badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--color-sale, #d32f2f);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.4rem 0.8rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    z-index: 2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-product__action {
+    margin-top: auto;
+    padding-top: 1rem;
+  }
+
+  .price {
+    --price-color: var(--color-heading, #2c3e50);
+    --sale-color: var(--color-sale, #d32f2f);
+    --compare-color: var(--color-text-light, #6b6b6c);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--price-color);
+    font-family: var(--font-body-family);
+  }
+
+  .price__regular {
+    font-weight: 600;
+    color: var(--price-color);
+  }
+
+  .price__sale {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .price--on-sale .price__regular {
+    display: none;
+  }
+
+  .price--on-sale .price__sale {
+    display: flex;
+  }
+
+  .price__sale .price-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .price-item--sale {
+    color: var(--sale-color);
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  .price-item--compare {
+    text-decoration: line-through;
+    color: var(--compare-color);
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .loading-products {
+    text-align: center;
+    padding: 6rem 2rem;
+    display: none;
+  }
+
+  .loading-spinner {
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-top-color: var(--color-primary, #d4a762);
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    animation: spin 1s linear infinite;
+  }
+
+  .loading-products p {
+    font-size: 1.6rem;
+    color: var(--color-text, #2c3e50);
+    margin: 0;
+    font-weight: 500;
+  }
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+
+<div class="shop-by-concern">
+  <h2 class="section-title">{{ section.settings.title }}</h2>
+  <div class="concern-grid">
+    {% for block in section.blocks %}
+      {% assign collection = collections[block.settings.collection] %}
+      {% if collection %}
+        <div class="concern-item" data-handle="{{ collection.handle }}">
+          <div class="concern-image-wrapper">
+            {% if block.settings.image %}
+              <img
+                src="{{ block.settings.image | image_url: width: 400 }}"
+                class="concern-image"
+                alt="{{ collection.title | escape }}"
+                loading="lazy"
+                width="400"
+                height="400">
+            {% elsif collection.image %}
+              <img
+                src="{{ collection.image | image_url: width: 400 }}"
+                class="concern-image"
+                alt="{{ collection.title | escape }}"
+                loading="lazy"
+                width="400"
+                height="400">
+            {% else %}
+              <div class="concern-image" style="background-color: #f5f5f5;"></div>
+            {% endif %}
+          </div>
+          <div class="concern-content">
+            <h3 class="concern-title">{{ collection.title }}</h3>
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="product-display-area">
+    <div class="loading-products">
+      <div class="loading-spinner"></div>
+      <p>Loading products...</p>
+    </div>
+    <div class="product-grid" id="product-grid"></div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const grid = document.getElementById('product-grid');
+    const items = document.querySelectorAll('.concern-item');
+    const loader = document.querySelector('.loading-products');
+
+    async function loadProducts(handle) {
+      loader.style.display = 'block';
+      grid.innerHTML = '';
+
+      try {
+        const res = await fetch(`/collections/${handle}/products.json?limit=4`);
+        const data = await res.json();
+
+        if (!data.products) throw new Error("No products found");
+
+        const html = data.products.map(product => {
+          const variant = product.variants?.[0] || {};
+          const productUrl = `/products/${product.handle}`;
+          let img = product.images?.[0]?.src || '//cdn.shopify.com/s/files/1/0612/5641/0285/files/placeholder.svg';
+          if (img.startsWith('//')) img = 'https:' + img;
+
+          const priceNum = parseFloat(variant.price || 0);
+          const compareNum = parseFloat(variant.compare_at_price || 0);
+
+          const price = `₹${priceNum.toFixed(2)}`;
+          const compare = (compareNum && compareNum > priceNum) ? `₹${compareNum.toFixed(2)}` : '';
+
+          return `
+            <div class="card-product">
+              <div class="card-product__media">
+                <a href="${productUrl}">
+                  <img src="${img}" class="card-product__image" alt="${product.title}" />
+                  ${compare ? '<div class="card-product__badge">Sale</div>' : ''}
+                </a>
+              </div>
+              <div class="card-product__content">
+                <h3 class="card-product__title">
+                  <a href="${productUrl}">${product.title}</a>
+                </h3>
+                <div class="price ${compare ? 'price--on-sale' : ''}">
+                  <div class="price__regular">${price}</div>
+                  ${compare ? `
+                    <div class="price__sale">
+                      <div class="price-item">
+                        <span class="price-item--sale">${price}</span>
+                        <span class="price-item--compare">${compare}</span>
+                      </div>
+                    </div>` : ''}
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        grid.innerHTML = html;
+      } catch (err) {
+        grid.innerHTML = '<p style="color:red;">Failed to load products.</p>';
+        console.error(err);
+      } finally {
+        loader.style.display = 'none';
+      }
+    }
+
+    items.forEach(item => {
+      item.addEventListener('click', () => {
+        const handle = item.dataset.handle;
+        loadProducts(handle);
+        items.forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
+
+    if (items.length > 0) {
+      items[0].classList.add('active');
+      loadProducts(items[0].dataset.handle);
+    }
+  });
+</script>
+
+
+{% schema %}
+  {
+    "name": "Shop by Concern (Simple)",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Shop by Concern"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#f9f9f9"
+      },
+      {
+        "type": "color",
+        "id": "heading_color",
+        "label": "Heading Color",
+        "default": "#2c3e50"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#2c3e50"
+      }, {
+        "type": "color",
+        "id": "accent_color",
+        "label": "Accent Color",
+        "default": "#d4a762"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "concern",
+        "name": "Concern",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Circle Image (optional)"
+          }
+        ]
+      }
+    ],
+    "max_blocks": 6,
+    "presets": [
+      {
+        "name": "Shop by Concern (Simple)",
+        "category": "Custom",
+        "blocks": [
+          {
+            "type": "concern"
+          }, {
+            "type": "concern"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
