@@ -1,0 +1,514 @@
+{%- style -%}
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    50% {
+      transform: translateY(-15px) rotate(2deg);
+    }
+    100% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+
+  @keyframes pulse {
+    0,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 50px;
+    animation: fadeIn 1s ease-out;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .hero-text:before,
+  .hero-text:after {
+    content: '❁';
+    position: absolute;
+    color: #d4a762;
+    font-size: 28px;
+    opacity: 0.5;
+    animation: pulse 3s infinite;
+  }
+
+  .hero-text:before {
+    top: -25px;
+    left: 10%;
+  }
+  .hero-text:after {
+    bottom: -30px;
+    right: 10%;
+  }
+
+  .hero-tagline {
+    color: #d4a762;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 auto 20px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(212, 167, 98, 0.2);
+    box-shadow: 0 4px 15px rgba(212, 167, 98, 0.1);
+    background: linear-gradient(90deg, rgba(212, 167, 98, 0.1), rgba(212, 167, 98, 0.2), rgba(212, 167, 98, 0.1));
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-tagline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.5s;
+  }
+
+  .hero-tagline:hover:before {
+    left: 100%;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin: 15px 0 25px;
+    line-height: 1.2;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    font-family: var(--font-heading-family, 'Playfair Display', serif);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+    position: relative;
+    display: inline-block;
+  }
+
+  .hero-title:after {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, rgba(212, 167, 98, 0.3), transparent);
+    border-radius: 4px;
+    z-index: -1;
+  }
+
+  .hero-title span {
+    color: #d4a762;
+    position: relative;
+    display: inline-block;
+  }
+
+  .hero-title span:after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(212, 167, 98, 0.3);
+    z-index: -1;
+  }
+
+  .hero-description {
+    color: #4a5a6a;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    margin: 0 auto 35px;
+    max-width: 80%;
+    font-weight: 400;
+    padding: 20px 30px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.03);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+  }
+
+  .hero-description:before,
+  .hero-description:after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d4a762'%3E%3Cpath d='M12 2L15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2z'/%3E%3C/svg%3E") no-repeat center/contain;
+    opacity: 0.5;
+    animation: float 4s ease-in-out infinite;
+  }
+
+  .hero-description:before {
+    top: -15px;
+    left: 15px;
+  }
+  .hero-description:after {
+    bottom: -15px;
+    right: 15px;
+  }
+
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #d4a762, #e8c07d);
+    color: white !important;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 14px 35px;
+    border-radius: 50px;
+    box-shadow: 0 5px 20px rgba(212, 167, 98, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    overflow: hidden;
+    border: none;
+  }
+
+  .hero-cta:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, #e8c07d, #d4a762);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .hero-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 167, 98, 0.5);
+  }
+
+  .hero-cta:hover:before {
+    opacity: 1;
+  }
+
+  .hero-cta:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: {{ section.settings.accent_color }};
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+
+  .hero-cta:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .hero-image {
+    max-width: 550px;
+    margin: 0 auto;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .main-image {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 12px solid white;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    transform: rotate(-2deg);
+    background: white;
+    transition: all 0.6s ease;
+  }
+
+  .main-image:hover {
+    transform: rotate(0) scale(1.03);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  }
+
+  .main-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.8s ease;
+  }
+
+  .main-image:hover img {
+    transform: scale(1.05);
+  }
+
+  .herb-decoration {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    opacity: 0.1;
+    z-index: 1;
+  }
+
+  .herb-2 {
+    bottom: 10%;
+    right: 5%;
+    transform: rotate(15deg);
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 0 20px;
+  }
+
+  .feature-item {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+  }
+
+  .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, {{ section.settings.bg_color | color_lighten: 10 }}, {{ section.settings.bg_color | color_darken: 5 }});
+    color: {{ section.settings.accent_color }};
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease
+    , box-shadow 0.3s ease;
+  }
+
+  .feature-item:hover .feature-icon {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px{{ section.settings.accent_color | color_modify: 'alpha', 0.2 }};
+  }
+
+  .feature-title {
+    color: {{ section.settings.text_color }};
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+
+  .feature-text {
+    color: {{ section.settings.text_color | color_modify: 'alpha', 0.7 }};
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 991px) {
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero-title {
+      font-size: 2.2rem;
+    }
+    .hero-description {
+      font-size: 1rem;
+    }
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+    .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .btn {
+      padding: 10px 20px;
+      font-size: 0.9rem;
+      width: 100%;
+    }
+  }
+{%- endstyle -%}
+
+
+{% schema %}
+  {
+    "name": "Ayurveda Hero Section",
+    "tag": "section",
+    "class": "section ayurveda-section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Content Settings"
+      },
+      {
+        "type": "text",
+        "id": "tagline",
+        "label": "Tagline Text",
+        "default": "आयुर्वेद की शुद्धता"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Main Heading",
+        "default": "Discover the Ancient Wisdom of Ayurveda"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Experience the healing power of nature with our authentic Ayurvedic products, crafted using time-tested formulations and pure, natural ingredients for holistic wellness.</p>"
+      }, {
+        "type": "text",
+        "id": "cta_text",
+        "label": "Call to Action Text",
+        "default": "Discover more"
+      }, {
+        "type": "url",
+        "id": "cta_link",
+        "label": "Call to Action Link"
+      }, {
+        "type": "header",
+        "content": "Media Settings"
+      }, {
+        "type": "image_picker",
+        "id": "hero_image",
+        "label": "Hero Image",
+        "info": "Recommended size: 1200x800px"
+      }, {
+        "type": "header",
+        "content": "Feature Boxes"
+      }, {
+        "type": "checkbox",
+        "id": "show_features",
+        "label": "Show Feature Boxes",
+        "default": true
+      }, {
+        "type": "text",
+        "id": "feature_1_title",
+        "label": "Feature 1 Title",
+        "default": "100% Natural"
+      }, {
+        "type": "text",
+        "id": "feature_1_text",
+        "label": "Feature 1 Text",
+        "default": "Pure, organic ingredients"
+      }, {
+        "type": "text",
+        "id": "feature_2_title",
+        "label": "Feature 2 Title",
+        "default": "Traditional Formulas"
+      }, {
+        "type": "text",
+        "id": "feature_2_text",
+        "label": "Feature 2 Text",
+        "default": "Time-tested formulations"
+      }, {
+        "type": "text",
+        "id": "feature_3_title",
+        "label": "Feature 3 Title",
+        "default": "Eco-Friendly"
+      }, {
+        "type": "text",
+        "id": "feature_3_text",
+        "label": "Feature 3 Text",
+        "default": "Sustainable practices"
+      }, {
+        "type": "text",
+        "id": "feature_4_title",
+        "label": "Feature 4 Title",
+        "default": "Holistic Wellness"
+      }, {
+        "type": "text",
+        "id": "feature_4_text",
+        "label": "Feature 4 Text",
+        "default": "For body and mind"
+      }, {
+        "type": "header",
+        "content": "Style Settings"
+      }, {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color",
+        "default": "#f8f5f0"
+      }, {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "#2c3e50"
+      }, {
+        "type": "color",
+        "id": "accent_color",
+        "label": "Accent Color",
+        "default": "#d4a762"
+      }, {
+        "type": "range",
+        "id": "padding_top",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding Top",
+        "default": 80
+      }, {
+        "type": "range",
+        "id": "padding_bottom",
+        "min": 0,
+        "max": 100,
+        "step": 4,
+        "unit": "px",
+        "label": "Padding Bottom",
+        "default": 80
+      }
+    ],
+    "presets": [
+      {
+        "name": "Ayurveda Hero Section",
+        "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}
